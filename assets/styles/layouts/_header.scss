@@ -1,0 +1,35 @@
+@use "../common/index" as c;
+.mainHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.4rem 6rem;
+  background-color: #1b2023;
+  &__logo {
+    @include c.textConfig(2.4rem, 2.8rem, 700, #ffffff);
+    &::after {
+      display: inline-block;
+      content: "";
+      width: 0.6rem;
+      aspect-ratio: 1;
+      background-color: #f7e92b;
+      border-radius: 50%;
+    }
+  }
+  &__switch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .switch__text {
+      @include c.textConfig(2.4rem, 2.8rem, 600, #ffffff);
+    }
+    .baseSwitch {
+      margin-left: 2rem;
+    }
+  }
+}

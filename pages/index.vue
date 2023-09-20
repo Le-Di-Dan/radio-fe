@@ -1,9 +1,13 @@
 <template>
-  <Tutorial/>
+  <Tuner />
 </template>
 
 <script>
+import Tuner from "../components/Tuner.vue";
 export default {
-  name: 'IndexPage'
-}
+  name: "IndexPage",
+  components: {
+    Tuner,
+  },
+};
 </script>
